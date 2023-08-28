@@ -9,14 +9,23 @@
   </head>
   <body>
 
-    <form action="https://script.google.com/macros/s/AKfycbx_k22UijbL8nV_HE_eFCqonZ5LtCmyZqLd_wvG3_lWoAdLGWI/exec" method="POST">
+    <form action="https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing" method="POST">
 
       <!--
         The google sheet can be found at: https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing
         Create a field for each cell in the Google Sheet.
       -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="Name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="Email" required><br><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="Message" required></textarea><br><br>
 
       <button type="submit">Save</button>
     </form>
   </body>
 </html>
+
