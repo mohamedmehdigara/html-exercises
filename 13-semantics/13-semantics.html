@@ -24,6 +24,14 @@
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/services">Our services</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/contact">Contact us</a></li>
+          </ul>
+        </nav>
       </section>
 
       <section>
@@ -41,19 +49,47 @@
               - Prefer to not disclose, "na"
             - Photo, optional, as "profile_photo". The user can upload a photo if they want. We only accept PNGs, JPGs, and WebP formats.
         -->
+        <form action="/profile/save" method="post">
+          <label for="profile_first_name">First Name:</label>
+          <input type="text" id="profile_first_name" name="profile_first_name" required><br>
+          
+          <label for="profile_family_name">Family Name:</label>
+          <input type="text" id="profile_family_name" name="profile_family_name" required><br>
+          
+          <label for="username">Email:</label>
+          <input type="email" id="username" name="username" required><br>
+          
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone"><br>
+          
+          <label>Gender:</label>
+          <input type="radio" id="male" name="gender" value="m">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="f">
+          <label for="female">Female</label>
+          <input type="radio" id="na" name="gender" value="na">
+          <label for="na">Prefer to not disclose</label><br>
+          
+          <label for="profile_photo">Profile Photo (PNG, JPG, WebP):</label>
+          <input type="file" id="profile_photo" name="profile_photo" accept=".png, .jpg, .webp"><br>
+          
+          <input type="submit" value="Update Profile">
+        </form>
       </section>
 
       <section>
         <h2>An excerpt</h2>
         <!--
           3. This excerpt is from a short story called "The story of your life" by "Ted Chiang". Supply the attribution to the author and their title, then mark-up the following excerpt correctly:
-
-          "The only reason you had me was so you could get a maid you wouldn't have to pay," you'll say bitterly, dragging the vacuum cleaner out of the closet.
-
-          "That's right!" I'll say. "Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it."
-
-          "If you weren't my mother, this would be illegal," you'll say, seething as you unwind the power cord and plug it into the wall outlet.
         -->
+        <blockquote>
+          <p>"The only reason you had me was so you could get a maid you wouldn't have to pay," you'll say bitterly, dragging the vacuum cleaner out of the closet.</p>
+          <p>"That's right!" I'll say. "Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it."</p>
+          <p>"If you weren't my mother, this would be illegal," you'll say, seething as you unwind the power cord and plug it into the wall outlet.</p>
+        </blockquote>
+        <footer>
+          — "The story of your life" by <cite>Ted Chiang</cite>
+        </footer>
       </section>
 
       <section>
@@ -74,6 +110,41 @@
 
           Please provide a summary of the student's information.
         -->
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Weight</th>
+              <th>Height</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Fred</td>
+              <td>23</td>
+              <td>74kg</td>
+              <td>182cm</td>
+            </tr>
+            <tr>
+              <td>Anne</td>
+              <td>26</td>
+              <td>56kg</td>
+              <td>173cm</td>
+            </tr>
+            <tr>
+              <td>Judith</td>
+              <td>19</td>
+              <td>51kg</td>
+              <td>168cm</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">Summary of Student Information</td>
+            </tr>
+          </tfoot>
+        </table>
       </section>
 
       <section>
@@ -111,7 +182,9 @@
             Excerpt:
               Develop your critical thinking skills. Boost your ability to solve problems and make the right decisions at work, home and in study.
         -->
+        <p>Visit the <a href="/search">search results page</a> for the entered search term: "critical thinking".</p>
       </section>
+
       <section>
         <h2>A definition</h2>
         <!--
