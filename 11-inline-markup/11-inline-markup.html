@@ -18,21 +18,21 @@
 
       <!-- In this example, the 'Wait!' needs stressing when vocalised -->
       <p>
-        "Wait!" shouted Jesse.
+        "<strong>Wait!</strong>" shouted Jesse.
       </p>
 
       <hr>
 
       <!-- It's a good idea to tell a computer how to read a datetime: -->
       <p>
-        The time is now 2pm, on Wednesay the 12th of February, 2020.
+        The time is now 2pm, on <time datetime="2020-02-12">Wednesday the 12th of February, 2020</time>.
       </p>
 
       <hr>
 
       <!-- What do 'H' and 'O' mean here? -->
       <p>
-        The elements H and O, bond as H20, or water (as it is colloquaially known).
+        The elements <abbr title="Hydrogen">H</abbr> and <abbr title="Oxygen">O</abbr>, bond as H<sub>2</sub>O, or water (as it is colloquially known).
       </p>
 
       <hr>
@@ -41,33 +41,35 @@
       <p>
         Editor's Notes:<br>
 
-        Please use CTRL+B to bold this word: Critical<br>
-        Please use CTRL+I to italicise this word: Doubtful<br>
+        Please use <kbd>CTRL+B</kbd> to bold this word: <strong>Critical</strong><br>
+        Please use <kbd>CTRL+I</kbd> to italicize this word: <em>Doubtful</em><br>
 
-        Please underline this word: Thinking<br>
-        Please put a line through this word: Assuming<br>
+        Please underline this word: <u>Thinking</u><br>
+        Please put a line through this word: <del>Assuming</del><br>
 
-        Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
-        "The slow brown fox jumped over the lazy dog."<br>
+        Please show that the word '<del>slow</del> quick' was removed, and 'quick' added in its place in the following sentence:
+        "<ins>The quick</ins> brown fox jumped over the lazy dog."<br>
       </p>
 
       <hr>
 
       <!-- We can do the same with samples of code, even maintaining the whitespace: -->
       <p>
-        "Woah! 'that' was unexpected!" exclaimed Keith.<br>
+        "Woah! '<code>that</code>' was unexpected!" exclaimed Keith.<br>
         Curiously, Jesse looked at the output on Keith's screen and it said:<br>
 
+        <pre>
           Unexpected value for argument 'that'
-            - in function clickHandler, line 12
-            - called from function anonymous, line 34
+            - in function <code>clickHandler</code>, line 12
+            - called from function <code>anonymous</code>, line 34
+        </pre>
       </p>
 
       <hr>
 
       <!-- We can add helpful markup to highlight words -->
       <p>
-        Your search term: 'Helicopter' was found in the following documents:
+        Your search term: '<mark>Helicopter</mark>' was found in the following documents:
       </p>
       <ul>
         <li>
